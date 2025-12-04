@@ -1,0 +1,44 @@
+{
+  "bookmarks": [
+    {
+      "name": "AWS Console",
+      "url": "https://us-west-1.console.aws.amazon.com"
+    },
+    {
+      "name": "Calendar",
+      "url": "https://calendar.google.com"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com/"
+    },
+    {
+      "name": "Figma",
+      "url": "https://www.figma.com/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com"
+    },
+    {
+      "name": "Gmail",
+      "url": "https://mail.google.com"
+    },
+    {
+      "name": "Linear",
+      "url": "https://linear.app"
+    },
+    {
+      "name": "Loom",
+      "url": "https://www.loom.com"
+    },
+    {
+      "name": "Notion",
+      "url": "https://www.notion.so"
+    },
+    {
+      "name": "Vercel",
+      "url": "https://vercel.com"
+    }
+  ]
+}

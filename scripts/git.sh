@@ -71,7 +71,8 @@ if gh auth status &>/dev/null; then
     print_success_muted "Git protocol already set to SSH"
   else
     print_muted "Setting git protocol to SSH..."
-    gh auth setup-git --git-protocol ssh
+    gh config set git_protocol ssh
+    gh auth setup-git
     print_success_muted "Git protocol set to SSH"
   fi
 else

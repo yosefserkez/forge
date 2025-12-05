@@ -442,6 +442,22 @@ ask_for_sudo() {
 
 }
 
+ask_for_github_org() {
+  if [ -z "$GITHUB_ORG" ]; then
+    echo ""
+    print_question "Enter your GitHub organization name (e.g. 'yosefserkez'):"
+    read -r GITHUB_ORG
+    if [ -z "$GITHUB_ORG" ]; then
+      print_error "GitHub organization name cannot be empty"
+      exit 1
+    fi
+    export GITHUB_ORG
+    print_success "GitHub organization set to: $GITHUB_ORG"
+  else
+    print_success_muted "GitHub organization already set to: $GITHUB_ORG"
+  fi
+}
+
 ask() {
   # https://djm.me/ask
   local prompt default reply

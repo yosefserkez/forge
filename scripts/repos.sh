@@ -41,7 +41,7 @@ GITHUB_ORG="${1:-${GITHUB_ORG:-}}"
 if [ -z "$GITHUB_ORG" ]; then
   echo ""
   print_question "Enter your GitHub organization name:"
-  read -r GITHUB_ORG
+  read -r GITHUB_ORG </dev/tty
   if [ -z "$GITHUB_ORG" ]; then
     print_error "GitHub organization name cannot be empty"
     exit 1
@@ -134,7 +134,7 @@ else
   
   echo ""
   print_question "Enter repository numbers to clone (comma-separated, e.g., 1,3,5) or 'all' for all repositories:"
-  read -r selection
+  read -r selection </dev/tty
   
   if [ -z "$selection" ]; then
     print_warning "No repositories selected. Skipping repository setup."
